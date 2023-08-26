@@ -39,4 +39,4 @@ echo -e "\e[32m install mongo db \e[0m"
 yum install mongodb-org-shell -y
 
 echo -e "\e[32m load mongodb schema \e[0m"
-mongo --host mongodb-dev.manibabu.site </app/schema/catalogue.js
+mongo --host 172.31.87.167 </app/schema/catalogue.js
