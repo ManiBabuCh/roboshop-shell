@@ -23,6 +23,7 @@ cd /app
 npm install
 
 echo -e "\e[32m configue systemd services\e[0m"
+cd /home/centos/roboshop-shell
 cp /home/centos/roboshop-shell/catalogue.service /etc/systemd/system/catalogue.service
 
 echo -e "\e[32m  start catalogue service\e[0m"
@@ -31,6 +32,7 @@ systemctl enable catalogue
 systemctl start catalogue
 
 echo -e "\e[32m copy mogodb.repo\e[0m"
+cd /home/centos/roboshop-shell
 cp /home/centos/roboshop-shell/mogodb.repo /etc/yum.repos.d/mongo.repo
 
 echo -e "\e[32m install mongo db \e[0m"
