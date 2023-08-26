@@ -33,10 +33,11 @@ systemctl start catalogue
 
 echo -e "\e[32m copy mogodb.repo\e[0m"
 cd /home/centos/roboshop-shell
-cp /home/centos/roboshop-shell/mogodb.repo /etc/yum.repos.d/mongo.repo
+cp mogodb.repo /etc/yum.repos.d/mongo.repo
 
 echo -e "\e[32m install mongo db \e[0m"
 yum install mongodb-org-shell -y
 
 echo -e "\e[32m load mongodb schema \e[0m"
+cd /app
 mongo --host mongodb-dev.manibabu.site </app/schema/catalogue.js
