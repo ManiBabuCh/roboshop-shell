@@ -33,7 +33,7 @@ systemctl start catalogue
 
 echo -e "\e[32m copy mogodb.repo\e[0m"
 cd /home/centos/roboshop-shell
-cp mogodb.repo /etc/yum.repos.d/mongo.repo
+cp mongodbgodb.repo /etc/yum.repos.d/mongo.repo
 
 echo -e "\e[32m install mongo db \e[0m"
 yum install mongodb-org-shell -y
