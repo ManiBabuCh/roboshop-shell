@@ -17,7 +17,7 @@ unzip /tmp/frontend.zip  >>/tmp/roboshop.log
 
 #copy conf file
 echo -e "\e[32m copy conf file\e[0m"
-cp frontend.conf /etc/nginx/default.d/roboshop.conf
+cp /home/centos/roboshop-shell/frontend.conf /etc/nginx/default.d/roboshop.conf
 #systemservices
 echo -e "\e[32m systemservices\e[0m"
 systemctl enable nginx >>/tmp/roboshop.log
